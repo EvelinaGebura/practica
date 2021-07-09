@@ -8,4 +8,4 @@ add ssh key
 ![image](https://user-images.githubusercontent.com/86943250/125129617-6545e700-e108-11eb-80fd-7a875b53861a.png)
 
 GIT
-![image](https://user-images.githubusercontent.com/86943250/125131069-d1c1e580-e10a-11eb-8f53-0dbcdac79465.png)
+![Безымянный](https://user-images.githubusercontent.com/86943250/125131433-70e6dd00-e10b-11eb-8dff-be0f4e943bf9.png)
