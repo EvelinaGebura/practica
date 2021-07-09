@@ -1,18 +1,18 @@
-# 2 Варіант
-import random
+import re
 
-print("\n\nA list of 30 random integers from -100 to +100:")
-array = range(-100, 100)
-numbers = random.sample(array, 30)
-print(numbers)
+str = input("\nВведіть рядок: ")
+word = ''.join([i for i in str if not i.isdigit()])
+nums = re.findall(r'\d+', str)
+nums = [int(i) for i in nums]
 
-print("\nMaximum list item:")
-print(max(numbers))
+print("\nРядок без чисел:", word)
+print("Числа з рядка:", nums)
 
-print("\nSequence number of the maximum list item:")
-print(numbers.index(max(numbers)))
+WithLarge = ' '.join(word[0].upper() + word[1:-1] + word[-1:].upper() for word in word.split())
+print("\nРядок після змін:", WithLarge)
 
-print("\nPairs of negative numbers standing side by side:\n")
-for i in range(len(numbers)-1):
-    if numbers[i] < 0 and numbers[i+1] < 0:
-        print(numbers[i], numbers[i+1])
+nums.remove(max(nums))
+numberIndex = [nums[i]**i for i in range(0,len(nums))]
+
+print("Масив чисел в степені за їхнім індексом:", numberIndex)
+print("\n")
